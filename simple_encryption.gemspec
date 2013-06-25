@@ -10,14 +10,17 @@ Gem::Specification.new do |spec|
   spec.email         = ["ronaldo.junior@gmail.com"]
   spec.description   = %q{Simple Encryption applies only the simplest encryption algorithms out there}
   spec.summary       = %q{Simple Encryption Systems}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/linkrjr/simple_encryption.git"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency 'ronn', '~> 0.7.3'  
+  spec.add_development_dependency 'rspec', '~> 2.11'
+  
+  spec.add_dependency 'activesupport', ['>= 3.0.0']
 end
