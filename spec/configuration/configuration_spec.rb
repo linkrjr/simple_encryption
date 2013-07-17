@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SimpleEncryption::Configuration"" do
+describe SimpleEncryption::Configuration do
   
   context "default settings" do
     subject { SimpleEncryption::Configuration.config }

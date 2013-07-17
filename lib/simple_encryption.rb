@@ -1,6 +1,9 @@
-require "simple_encryption/version"
+require "active_support/dependencies/autoload"
 
 module SimpleEncryption
-  require 'simple_encryption/algorithms'
-  require 'simple_encryption/configuration'
+  extend ActiveSupport::Autoload
+
+  autoload :Version
+  autoload :Algorithms
+  autoload :Configuration
 end
