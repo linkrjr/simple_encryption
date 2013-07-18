@@ -23,24 +23,26 @@ Or install it yourself as:
 
 Simple Encryption is very simple to use, just install the gem as described above and try this in your code.
 
-` SimpleEncryption::Encrypter.encrypt("message to encrypt") `
+```ruby 
+SimpleEncryption::Encrypter.encrypt("message to encrypt")
+```
 
 By default Simple Encryption uses the [Zenit Polar](http://pt.wikipedia.org/wiki/Zenit_Polar) cipher, you can change it to use one of the other included ciphers ([ROT13](https://en.wikipedia.org/wiki/ROT13), ROT47).
 
 Simply create add an initialization file to your rails project and add the following lines to it
 
-` 
+```ruby 
 SimpleEncryption::Configuration.configure do |config|
   config.encryption_algorithm = SimpleEncryption::Ciphers::ROT13
 end
-`
+```
 or
 
-`
+```ruby
 SimpleEncryption::Configuration.configure do |config|
   config.encryption_algorithm = SimpleEncryption::Ciphers::ROT47
 end
-`
+```
 
 And use it the same way we did on the first example
 
