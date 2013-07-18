@@ -1,12 +1,6 @@
 require 'spec_helper'
 
 describe SimpleEncryption::Configuration do
-
-  after :all do
-    SimpleEncryption::Configuration.configure do |config|
-      config.encryption_algorithm = SimpleEncryption::Ciphers::ZenitPolar
-    end
-  end
   
   context "default settings" do
     subject { SimpleEncryption::Configuration.config }
@@ -18,7 +12,7 @@ describe SimpleEncryption::Configuration do
     
     class FakeAlgorithm; end
     
-    before :each do
+    before :all do
       SimpleEncryption::Configuration.configure do |config|
         config.encryption_algorithm = FakeAlgorithm
       end

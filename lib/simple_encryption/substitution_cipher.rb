@@ -3,6 +3,7 @@ module SimpleEncryption
     extend ActiveSupport::Concern
 
     module ClassMethods
+      
       def encrypt(message)
         perform(message.downcase)
       end
