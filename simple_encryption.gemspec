@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleEncryption::Version::STRING
   spec.authors       = ["Ronaldo Gomes"]
   spec.email         = ["ronaldo.junior@gmail.com"]
-  spec.description   = %q{Simple Encryption applies only the simplest encryption algorithms out there}
-  spec.summary       = %q{Simple Encryption Systems}
+  spec.description   = %q{Simple Encryption is an implementation of some examples of Substitution cipher. It includes implementations for Zenit Polar, ROT13 and ROT47}
+  spec.summary       = %q{Simple Encryption implements Substitution Ciphers like Zenit Polar, ROT13 and ROT47}
   spec.homepage      = "https://github.com/linkrjr/simple_encryption.git"
   spec.license       = "MIT"
 
