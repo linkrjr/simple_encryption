@@ -2,12 +2,14 @@ require 'spec_helper'
 
 describe SimpleEncryption::Encrypter do
 
-  context "when using the default encryption algorithm 'Zenit Polar'" do
-    it {expect(subject.class.encrypt("hello")).to eql "honne"}
-    it {expect(subject.class.encrypt("Message")).to eql "mossigo"}
+  it { expect{ subject.class.encrypt(nil) }.to raise_error }
+
+  context "when using the default cipher 'Zenit Polar'" do
+    it { expect(subject.class.encrypt("hello")).to eql "honne" }
+    it { expect(subject.class.encrypt("Message")).to eql "mossigo" }
     it { expect(subject.class.encrypt("Message with space")).to eql("mossigo warh szico") }
   end
-
+ 
   context "when using the ROT13 cipher" do
     before do
       SimpleEncryption::Configuration.configure do |config|
