@@ -7,6 +7,7 @@ An implementation for Pigpen cipher and some others is coming soon.
 
 [![Code Climate](https://codeclimate.com/github/linkrjr/simple_encryption.png)](https://codeclimate.com/github/linkrjr/simple_encryption)
 [![Travis CI](https://api.travis-ci.org/linkrjr/simple_encryption.png)](https://travis-ci.org/linkrjr/simple_encryption)
+[![Dependency Status](https://gemnasium.com/linkrjr/simple_encryption.png)](https://gemnasium.com/linkrjr/simple_encryption)
 
 ## Installation
 
