@@ -5,6 +5,7 @@ It includes implementations for [Zenit Polar](http://pt.wikipedia.org/wiki/Zenit
 
 An implementation for Pigpen cipher and some others is coming soon.
 
+[![Gem Version](https://badge.fury.io/rb/simple_encryption.png)](http://badge.fury.io/rb/simple_encryption)
 [![Code Climate](https://codeclimate.com/github/linkrjr/simple_encryption.png)](https://codeclimate.com/github/linkrjr/simple_encryption)
 [![Travis CI](https://api.travis-ci.org/linkrjr/simple_encryption.png)](https://travis-ci.org/linkrjr/simple_encryption)
 [![Dependency Status](https://gemnasium.com/linkrjr/simple_encryption.png)](https://gemnasium.com/linkrjr/simple_encryption)
