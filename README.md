@@ -7,6 +7,7 @@ An implementation for Pigpen cipher and some others is coming soon.
 
 [![Gem Version](https://badge.fury.io/rb/simple_encryption.png)](http://badge.fury.io/rb/simple_encryption)
 [![Code Climate](https://codeclimate.com/github/linkrjr/simple_encryption.png)](https://codeclimate.com/github/linkrjr/simple_encryption)
+[![Codeship Status for linkrjr/simple_encryption](https://www.codeship.io/projects/9fc47770-2749-0132-7b27-1a72e97eb705/status)](https://www.codeship.io/projects/37704)
 [![Travis CI](https://api.travis-ci.org/linkrjr/simple_encryption.png)](https://travis-ci.org/linkrjr/simple_encryption)
 [![Dependency Status](https://gemnasium.com/linkrjr/simple_encryption.png)](https://gemnasium.com/linkrjr/simple_encryption)
 
