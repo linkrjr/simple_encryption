@@ -7,18 +7,14 @@ options = {}
 
 opt_parser = OptionParser.new do |opt|
   
-  opt.banner = "Usage: simple_enc COMMAND [OPTIONS]"
+  opt.banner = "Usage: simple_enc [OPTIONS] text"
   opt.separator ""
-  opt.separator "COMMANDS"  
-  opt.separator ""  
   opt.separator "Options"
   opt.on("-c", "--cipher NAME", "the cipher name used to encrypt the text. ZENIT, ROT13 or ROT47") do |cipher|
     options[:cipher] = cipher
   end
   
-  opt.on("-h", "--help", "help") do
-    puts opt_parser
-  end
+  opt.on("-h", "--help", "help")
       
 end
 
@@ -27,7 +23,6 @@ opt_parser.parse!
 cipher = options[:cipher] || 'ZENIT'
 
 SimpleEncryption::Configuration.configure do |config|
-  
   case cipher
   when "ZENIT"
     config.encryption_algorithm = SimpleEncryption::Ciphers::ZenitPolar
@@ -39,4 +34,8 @@ SimpleEncryption::Configuration.configure do |config|
   
 end
 
-puts SimpleEncryption::Encrypter.encrypt(ARGV[0])
+if ARGV[0] == nil
+  puts opt_parser
+else
+  puts SimpleEncryption::Encrypter.encrypt(ARGV[0])
+end  
